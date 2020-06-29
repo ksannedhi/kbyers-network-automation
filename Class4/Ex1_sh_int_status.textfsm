@@ -1,0 +1,9 @@
+Value PORT_NAME (Gi\d\/\d\/\d)
+
+Start
+  ^Port.*Type\s* -> ShIntStatus
+
+ShIntStatus
+  ^${PORT_NAME}\s -> Record
+
+EOF

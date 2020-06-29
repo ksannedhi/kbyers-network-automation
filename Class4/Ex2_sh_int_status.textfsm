@@ -1,0 +1,14 @@
+Value PORT_NAME (\S+)
+Value STATUS (notconnect)
+Value VLAN (1)
+Value DUPLEX (auto)
+Value SPEED (\w+)
+Value PORT_TYPE (\S+)
+
+Start
+  ^Port.*Type\s* -> ShIntStatus
+
+ShIntStatus
+  ^${PORT_NAME}\s+${STATUS}\s+${VLAN}\s+${DUPLEX}\s+${SPEED}\s+${PORT_TYPE}\s* -> Record
+
+EOF

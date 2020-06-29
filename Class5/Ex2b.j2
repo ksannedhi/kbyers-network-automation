@@ -1,0 +1,7 @@
+interface {{nxos_int}}
+  ip address {{nxos_ip}}/{{nxos_subnet}}
+
+router bgp {{nxos_local_as}}
+  neighbor {{nxos_peer_ip}} remote-as {{nxos_remote_as}}
+    address-family ipv4 unicast
+

@@ -1,0 +1,12 @@
+Value INTERFACE (\S+)
+Value IP_ADDR (\S+)
+Value INT_STATUS (up|down)
+Value INT_PROTOCOL (up|down)
+
+Start
+  ^Interface.*Protocol\s* -> ShIPIntBr
+
+ShIPIntBr
+  ^${INTERFACE}\s+${IP_ADDR}.*${INT_STATUS}\s+${INT_PROTOCOL}\s* -> Record
+
+EOF

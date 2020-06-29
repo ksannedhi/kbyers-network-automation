@@ -1,0 +1,11 @@
+Value DEV_NAME (\S+)
+Value DEV_DESCRIPTION (\S+)
+Value PRODUCT_ID (\S+)
+Value VERSION_ID (V\d\d)
+Value SERIAL_NUM (\S+)
+
+Start
+  ^NAME: ${DEV_NAME}, DESCR: ${DEV_DESCRIPTION}\s*
+  ^PID: ${PRODUCT_ID} , VID: ${VERSION_ID} , SN: ${SERIAL_NUM}\s* -> Record
+
+EOF

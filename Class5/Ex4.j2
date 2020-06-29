@@ -1,0 +1,18 @@
+{%- for vrf_id, vrf_params in vrf_data.items() %}
+vrf definition {{vrf_params[0]}}
+ rd {{vrf_params[1]}}
+ !
+ {%- if vrf_params[2] %}
+ address-family ipv4
+  route-target export {{vrf_params[1]}}
+  route-target import {{vrf_params[1]}}
+ exit-address-family
+ !
+ {%- endif %}
+ {%- if vrf_params[3] %}
+ address-family ipv6
+  route-target export {{vrf_params[1]}}
+  route-target import {{vrf_params[1]}}
+ exit-address-family
+ {%- endif %}
+{%- endfor %}

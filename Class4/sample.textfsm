@@ -1,0 +1,6 @@
+Value SERIAL_NUM (\d{5})
+
+Start
+  ^ser.*${SERIAL_NUM} -> Record
+
+EOF

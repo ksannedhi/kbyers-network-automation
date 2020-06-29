@@ -1,0 +1,14 @@
+{%- for intf in all_ints %}
+interface {{intf}}
+    switchport mode access
+    switchport access vlan 100
+{%- endfor %}
+
+Length of list:
+{{all_ints | length}}
+
+First and last elements:
+{{all_ints[0]}}
+{{all_ints[-1]}}
+
+{{all_ints}}
