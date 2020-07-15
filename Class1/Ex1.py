@@ -5,6 +5,7 @@ Simply print the router prompt back from this device to verify you are connectin
 from netmiko import ConnectHandler
 from getpass import getpass
 
+
 cisco_nxos1 = {"host": "nxos1.lasthop.io",
                 "username": "pyclass",
                 "password": getpass(),
