@@ -1,3 +1,6 @@
+'''For one of the Cisco IOS devices, use Netmiko and the send_command() method to retrieve 'show version'.
+Save this output to a file in the current working directory.'''
+
 from netmiko import Netmiko
 from getpass import getpass
 
