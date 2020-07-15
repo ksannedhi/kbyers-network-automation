@@ -1,3 +1,5 @@
+"""Compare the Python "type" of the elements at ['zones-information']['zones-security']. What is the difference between the two data types? Why?"""
+
 import xmltodict
 
 def xml2dict(file_name):
