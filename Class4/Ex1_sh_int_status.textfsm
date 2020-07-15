@@ -6,7 +6,7 @@ Gi0/1/2         notconnect   1     auto   auto  10/100/1000BaseTX
 Gi0/1/3         notconnect   1     auto   auto  10/100/1000BaseTX
 
 Create a TextFSM template that extracts only the 'Port' column (i.e. the interface name). The output of the FSM table should look as follows:
-$ textfsm.py ex1_show_int_status.tpl ex1_show_int_status.txt
+$ textfsm.py Ex1_sh_int_status.textfsm Ex1_sh_int_status.txt
 ...
 FSM Table:
 ['PORT_NAME']
