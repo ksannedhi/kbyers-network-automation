@@ -1,6 +1,6 @@
 '''Expand the TextFSM template created in exercise1 such that you extract the Port, Status, Vlan, Duplex, Speed, and Type columns.
 For the purposes of this exercise you can ignore the 'Name' column and assume it will always be empty. The output of the FSM table should look similar to the following:
-$ textfsm.py ex2_show_int_status.tpl ex2_show_int_status.txt 
+$ textfsm.py Ex1_sh_int_status.textfsm Ex1_sh_int_status.txt
 ...
 FSM Table:
 ['PORT_NAME', 'STATUS', 'VLAN', 'DUPLEX', 'SPEED', 'PORT_TYPE']
