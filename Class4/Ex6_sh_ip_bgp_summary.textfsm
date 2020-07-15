@@ -1,3 +1,7 @@
+'''Parse the following 'show ip bgp summary' output (saved as Ex6_sh_ip_bgp_summary.txt). From this output, extract the following fields:
+Neighbor, Remote AS, Up_Down, and State_PrefixRcvd. Also include the Local AS and the BGP Router ID in each row of the tabular output (hint: use filldown for this). 
+Note, in order to simplify this problem only worry about the data shown in the output.'''
+
 Value Filldown ROUTER_ID (\d+\.\d+\.\d+\.\d+)
 Value Filldown LOCAL_AS (\d+)
 Value NEIGHBOR_IP ([0-9.]+)
