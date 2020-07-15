@@ -1,3 +1,6 @@
+'''Use TextFSM to parse the 'show arp' output from a Juniper SRX (saved as Ex4_junos_sh_arp.txt).
+Extract the following fields into tabular data: MAC Address, Address, Name, Interface.'''
+
 Value MAC_ADDRESS ([0-9a-f:]+)
 Value IP_ADDRESS (\d+.\d+.\d+.\d+)
 Value NAME (\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})
