@@ -1,3 +1,6 @@
+'''Using the pyeapi library, connect to arista3.lasthop.io and execute 'show ip arp'.
+From this ARP table data, print out a mapping of all of the IP addresses and their corresponding MAC addresses.'''
+
 import pyeapi
 from getpass import getpass
 
