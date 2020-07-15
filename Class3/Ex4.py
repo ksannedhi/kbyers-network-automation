@@ -19,7 +19,7 @@
     "notLearnedEntries": 0,
     "totalEntries": 2,
     "staticEntries": 0
-} <-- This is written to Ex4.json
+} <-- This is written to Ex4.json as an input to the following script.
 
 From a file, read this JSON data into your Python program.
 Process this ARP data and return a dictionary where the dictionary keys are the IP addresses and the dictionary values are the MAC addresses.
