@@ -1,3 +1,7 @@
+'''Expand on exercise3 except use a for-loop to configure five VRFs. Each VRF should have a unique name and a unique route distinguisher.
+Each VRF should once again have the IPv4 and the IPv6 address families controlled by a conditional-variable passed into the template.
+Note, you will want to pass in a list or dictionary of VRFs that you loop over in your Jinja2 template.'''
+
 from jinja2 import FileSystemLoader, StrictUndefined
 from jinja2.environment import Environment
 
@@ -13,4 +17,3 @@ vrf_vars = {"vrf_data": vrf_data_dict}
 
 t = env.get_template("Ex4.j2")
 print(t.render(vrf_vars))
-
