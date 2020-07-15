@@ -1,3 +1,4 @@
+'''Write the data structure you created previously to a YAML file. Use expanded YAML format.'''
 - device_name: Cisco3
   host: cisco3.lasthop.io
   password: pyplus
