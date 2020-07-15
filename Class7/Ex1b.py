@@ -1,3 +1,5 @@
+'''Using your XML variable from exercise 1a, print out the entire XML tree in a readable format (ensure that the output string is a unicode string).'''
+
 from lxml import etree
 
 xml_file = open("Ex1_show_security_zones.xml")
