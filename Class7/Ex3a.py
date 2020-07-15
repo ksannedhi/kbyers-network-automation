@@ -1,3 +1,7 @@
+'''Open the following two XML files: Ex1_show_security_zones.xml and Ex3_show_security_zones_trust.xml.
+Use a generic function that accepts an argument "filename" to open and read a file. Inside this function, use xmltodict to parse the contents of the file.
+Your function should return the xmltodict data structure. Using this function, create two variables to store the xmltodict data structure from the two files.'''
+
 import xmltodict
 
 def xml2dict(file_name):
