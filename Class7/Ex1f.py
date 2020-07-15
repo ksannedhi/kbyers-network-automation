@@ -1,3 +1,5 @@
+'''Iterate through all of the child elements of the "trust_zone" variable. Print out the tag name for each child element.'''
+
 from lxml import etree
 
 xml_file = open("Ex1_show_security_zones.xml")
@@ -9,4 +11,3 @@ trust_zone = my_xml[0]
 
 for child in trust_zone: #trust_zone.getchildren() can also be used, but it is verbose.
     print(child.tag)
-
