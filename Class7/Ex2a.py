@@ -1,3 +1,6 @@
+'''Using xmltodict, load the show_security_zones.xml file as a Python dictionary. Print out this new variable and its type.
+Note, the newly created object is an OrderedDict; not a traditional dictionary.'''
+
 import xmltodict
 from pprint import pprint
 
