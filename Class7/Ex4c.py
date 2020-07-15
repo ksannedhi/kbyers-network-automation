@@ -1,3 +1,6 @@
+'''Use the findall() method to find all occurrences of "zones-security".
+For each of these security zones, print out the security zone name ("zones-security-zonename", the text of that element).'''
+
 from lxml import etree
 
 xml_file = open("Ex1_show_security_zones.xml")
@@ -13,4 +16,3 @@ print()
 zones_list = my_xml.findall("./zones-security") #Alternative method
 for zone in zones_list:
     print(zone.find("./zones-security-zonename").text)
-
