@@ -1,3 +1,5 @@
+'''Using both direct indices and the getchildren() method, obtain the first child element and print its tag name.'''
+
 from lxml import etree
 
 xml_file = open("Ex1_show_security_zones.xml")
