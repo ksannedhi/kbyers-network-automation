@@ -1,3 +1,6 @@
+'''Parse the 'show lldp neighbors' output from nxos1 (saved as Ex5_nxos_sh_lldp_neig.txt).
+From this output use TextFSM to extract the Device ID, Local Intf, Capability, and Port ID.'''
+
 Value DEVICE_ID (\S+)
 Value LOCAL_INTERFACE (Eth2\/\d)
 Value CAPABILITY (\w\w)
