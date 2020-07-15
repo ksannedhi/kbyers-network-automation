@@ -1,3 +1,9 @@
+'''Create a Netmiko connection to the 'nxos2' device using a global_delay_factor of 2.
+Execute 'show lldp neighbors detail' and print the returned output to standard output.
+Execute 'show lldp neighbors detail' a second time using send_command() with a delay_factor of 8. Print the output of this command to standard output.
+Use the Python datetime library to record the execution time of both of these commands.
+Print these execution times to standard output.'''
+
 from netmiko import ConnectHandler
 from getpass import getpass
 from datetime import datetime
@@ -35,4 +41,3 @@ print(f'Delay factor 8 caused {exec_time2 - exec_time1} more delay than a delay 
 print("*" * 75)
 
 nxos_connect.disconnect()
-
