@@ -1,3 +1,6 @@
+'''Using the 'show interface Ethernet2/1' output (saved as Ex3_sh_int_eth_2_1.txt)from nxos1,
+extract the interface name, line status, admin state, MAC address, MTU, duplex, and speed using TextFSM.'''
+
 Value INTERFACE_NAME (Ethernet\d/\d)
 Value LINE_STATUS (\w\w)
 Value ADMIN_STATE (\w+)
