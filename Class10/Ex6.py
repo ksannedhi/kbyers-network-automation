@@ -1,3 +1,6 @@
+'''Using a context manager, the ProcessPoolExecutor, and the map() method, create a solution that executes "show ip arp" on all of the devices defined in my_devices.py.
+Note, the Juniper device will require "show arp" instead of "show ip arp" so your solution will have to properly account for this.'''
+
 from concurrent.futures import ProcessPoolExecutor
 from Ex1_devices import device_list
 from Ex2_functions import ssh_command2
@@ -23,4 +26,3 @@ with ProcessPoolExecutor(max_procs) as pool:
     end_time = datetime.now()
 
     print(f"Total time taken to execute 'show version' on all the devices: {end_time - start_time}")
-
