@@ -1,3 +1,5 @@
+'''Using a context manager and a 'ProcessPoolExecutor', complete the same task as Exercise 4.'''
+
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from Ex1_devices import device_list
 from Ex2_functions import ssh_command2
@@ -18,4 +20,3 @@ with ProcessPoolExecutor(max_procs) as pool:
     end_time = datetime.now()
 
     print(f"Total time taken to execute 'show version' on all the devices: {end_time - start_time}")
-
