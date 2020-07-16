@@ -1,0 +1,14 @@
+Value PORT_NAME (Gi0/1/\d)
+Value STATUS (\S+)
+Value VLAN (\d)
+Value DUPLEX (auto|half)
+Value SPEED (\S+)
+Value PORT_TYPE (10/100/1000BaseTX)
+
+Start
+  ^Port.*Type\s* -> ShIntStatus
+
+ShIntStatus
+  ^${PORT_NAME}\s+${STATUS}\s+${VLAN}\s+${DUPLEX}\s+${SPEED}\s+${PORT_TYPE}\s* -> Record
+
+EOF

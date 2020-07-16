@@ -1,0 +1,12 @@
+Value DEVICE_ID (\S+)
+Value LOCAL_INTERFACE (Eth2/\d)
+Value CAPABILITY (\w\w)
+Value PORT_ID (Eth2/\d)
+
+Start
+  ^Device.*Port ID\s* -> ShLLDPNeigh
+
+ShLLDPNeigh
+  ^${DEVICE_ID}\s+${LOCAL_INTERFACE}.*${CAPABILITY}\s+${PORT_ID}\s* -> Record
+
+EOF

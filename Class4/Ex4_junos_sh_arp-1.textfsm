@@ -1,0 +1,12 @@
+Value MAC_ADDRESS ([a-f0-9:]+)
+Value IP_ADDRESS ([0-9.]+)
+Value INTERFACE_NAME (\S+)
+Value INTERFACE_ID (vlan.\d)
+
+Start
+  ^MAC.*Flags\s* -> ShARP
+
+ShARP
+  ^${MAC_ADDRESS}\s+${IP_ADDRESS}\s+${INTERFACE_NAME}\s+${INTERFACE_ID}\s+ -> Record
+
+EOF

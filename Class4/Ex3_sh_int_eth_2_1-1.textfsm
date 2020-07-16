@@ -1,0 +1,16 @@
+Value INTERFACE_NAME (Ethernet\d/\d)
+Value LINE_STATUS (\w\w)
+Value ADMIN_STATE (\w+)
+Value MAC_ADDRESS (\w+.\w+.\w+)
+Value MTU (\d+\s\S+)
+Value DUPLEX ((half|full|auto)-duplex)
+Value SPEED (\d+\s\S+)
+
+Start
+  ^${INTERFACE_NAME} is ${LINE_STATUS}\s*
+  ^admin state is ${ADMIN_STATE},
+  ^\s+Hardware:.*address: ${MAC_ADDRESS}\s
+  ^\s+MTU ${MTU},
+  ^\s+${DUPLEX}, ${SPEED}\s* -> Record
+
+EOF
