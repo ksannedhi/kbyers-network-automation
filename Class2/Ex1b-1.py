@@ -1,3 +1,5 @@
+"""Now use send_command() and the expect_string argument to handle the additional prompting. Once again specify a target IP address of '8.8.8.8'."""
+
 from netmiko import ConnectHandler
 from getpass import getpass
 
@@ -16,4 +18,3 @@ output += ios_connect.send_command("\n", strip_command = False, expect_string = 
 
 ios_connect.disconnect()
 print(output)
-
