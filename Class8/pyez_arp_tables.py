@@ -13,4 +13,3 @@ print(arp_entries)
 print(arp_entries.keys())
 pprint(arp_entries.values())
 pprint(arp_entries.items())
-
