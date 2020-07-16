@@ -2,13 +2,9 @@
 Modify this base template such that you use Jinja2 include statements to pull in sub-templates for the NTP servers, the AAA configuration, and for the clock settings.
 
 Your base template should have the following items (in the proper locations):
-
 {% include 'aaa.j2' %}
-
 {% include 'clock.j2' %}
-
 {% include 'ntp.j2' %}
-
 
 The child templates being pulled in should contain the NTP configuration, the AAA configuration, and the clock configuration.
 The two NTP servers, the timezone, timezone_offset, and timezone_dst (daylight savings timezone name) should be variables in these child templates.
