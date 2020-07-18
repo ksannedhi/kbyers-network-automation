@@ -1,3 +1,5 @@
+''' Use an HTTP DELETE and Python-requests to delete the IP address object that you just created. Remember to reference the ID of your object.'''
+
 import os
 import json
 from pprint import pprint
@@ -14,4 +16,3 @@ response = requests.delete(url, headers = http_headers, verify = False)
 
 print(f"Response code: {response.status_code}")
 pprint(response.json())
-
