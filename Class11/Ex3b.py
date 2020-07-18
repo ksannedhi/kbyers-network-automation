@@ -1,3 +1,25 @@
+'''Using the same device information retrieved in exercise 3a, create and print a report to standard output.
+This report should contain the location, manufacturer, and status for each device. Your output should look similar to the following:
+
+------------------------------------------------------------
+arista1
+----------
+Location: Fremont Data Center
+Vendor: Arista
+Status: Active
+------------------------------------------------------------
+
+
+------------------------------------------------------------
+arista2
+----------
+Location: Fremont Data Center
+Vendor: Arista
+Status: Active
+------------------------------------------------------------
+
+...   # remaining devices'''
+
 import os
 import requests
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
@@ -23,4 +45,3 @@ for device in list_of_devices:
     print(f'Vendor: {device["device_type"]["manufacturer"]["name"]}')
     print(f'Status: {device["status"]["label"]}')
     print("-" * 33)
-
