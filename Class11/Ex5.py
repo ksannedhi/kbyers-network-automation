@@ -1,3 +1,8 @@
+'''Building on the script from exercise 4, add a description to the the IP address object that you just created. Accomplish this using an HTTP PUT.
+The HTTP PUT operation will require all of the mandatory fields in the object (in this case, the "address" field).
+Print the status code and the response.json() from your PUT operation.
+The HTTP PUT operation will use same URL as exercise 4b (i.e. the URL of the newly created IP address object including its ID).'''
+
 import os
 from pprint import pprint
 import json
